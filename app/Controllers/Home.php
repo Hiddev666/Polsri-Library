@@ -9,7 +9,8 @@ class Home extends BaseController
         return view('pages/home');
     }
 
-    public function about() {
-        return view('pages/about');
+    public function about()
+    {
+        return view('pages/home');
     }
 }

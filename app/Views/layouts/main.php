@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title><?= $this->renderSection('title')?></title>
+    <title><?= $this->renderSection('title') ?></title>
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -19,12 +19,18 @@
             .font-gabarito {
                 font-family: 'Gabarito', sans-serif;
             }
+
+            .bg-polsri {
+                background-color: #F68537;
+            }
         }
     </style>
 </head>
 
 <!-- Tempat halaman-halaman lain akan dirender -->
+
 <body class="font-gabarito text-[#404040]">
+    <?= $this->include('partials/navbar') ?>
     <?= $this->renderSection('content') ?>
 </body>
 

@@ -1,6 +1,7 @@
 <!-- Ambil file layouts/main.php sebagai template -->
 <?= $this->extend('layouts/main') ?>
 
+
 <!-- Render title -->
 <?= $this->section('title') ?>
 Polsri Library
@@ -8,8 +9,8 @@ Polsri Library
 
 <!-- Render content yang akan dimasukkan ke tengah-tengah file layouts/main.php -->
 <?= $this->section('content') ?>
-<div class="w-full h-screen flex justify-center items-center">
-    <div class="flex flex-col gap-5">
+<div class="w-full h-screen">
+    <!-- <div class="flex flex-col gap-5">
         <div class="flex items-center gap-3">
             <img class="w-17 h-17" src="/img/logo/polsri_logo.png" alt="Politeknik Negeri Sriwijaya">
             <h1 class="text-6xl font-bold">POLSRI LIBRARY</h1>
@@ -31,6 +32,24 @@ Polsri Library
                 </a>
             </div>
         </div>
+    </div> -->
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-25">
+        <div class="w-full h-110 bg-[url('/img/polsri-bg.jpg')] bg-cover bg-center relative rounded-md">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-orange-500/50 rounded-md"></div>
+            <div class="absolute bottom-10 left-10 text-white">
+                <div class="flex flex-col gap-3">
+                    <div>
+                        <h2 class="text-4xl font-semibold">Layanan Bebas Pustaka</h2>
+                        <p class="font-thin text-sm">Pengumuman Bebas Pustaka Untuk Calon Alumni</p>
+                    </div>
+                    <button class="w-fit bg-polsri py-2 px-3 rounded font-semibold text-white flex items-center gap-2">
+                        Baca Selengkapnya
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
+
 </div>
 <?= $this->endSection() ?>
